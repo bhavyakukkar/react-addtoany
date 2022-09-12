@@ -1,0 +1,42 @@
+[
+    {
+        "name": "whatsapp",
+        "display": "WhatsApp",
+        "apiUrl": "whatsapp://send?text=",
+
+        "showDefault": true,
+        "priority": 1
+    },
+    {
+        "name": "facebook",
+        "display": "Facebook",
+        "apiUrl": "https://www.facebook.com/sharer/sharer.php?display=popup&ref=plugin&src=like&kid_directed_site=0&u=",
+
+        "showDefault": false,
+        "priority": 2
+    },
+    {
+        "name": "twitter",
+        "display": "Twitter",
+        "apiUrl": "https://twitter.com/intent/tweet?url=",
+
+        "showDefault": false,
+        "priority": 3
+    },
+    {
+        "name": "linkedin",
+        "display": "LinkedIn",
+        "apiUrl": "https://www.linkedin.com/shareArticle?mini=true&url=",
+
+        "showDefault": false,
+        "priority": 4
+    },
+    {
+        "name": "email",
+        "display": "Email",
+        "apiUrl": "mailto:?body=",
+
+        "showDefault": false,
+        "priority": 5
+    }
+]
