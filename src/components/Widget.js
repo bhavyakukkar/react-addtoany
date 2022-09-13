@@ -27,6 +27,7 @@ export default function Widget({ adminPrivileges, storeShareData, editMode }) {
     return (
         <>
         {
+            //Widget Editor
             editMode &&
                 <WidgetEditor appsList={appsList}/>
         }
@@ -34,6 +35,7 @@ export default function Widget({ adminPrivileges, storeShareData, editMode }) {
             !editMode &&
                 <div className='widget'>
                     {
+                        //Loading Icon while App data is fetched from server
                         appsList.length === 0 &&
                         <div className="spinner-border" role="status"></div>
                     }
@@ -41,10 +43,12 @@ export default function Widget({ adminPrivileges, storeShareData, editMode }) {
                         appsList.length !== 0 &&
                             <>
                                 {
+                                    //Edit Button shown to Admins
                                     adminPrivileges &&
                                         <Link to="/admin/edit-widget" className='icon edit bi bi-pencil-fill'></Link>
                                         
                                 }
+                                {/* Widget Display */}
                                 <WidgetDisplay appsList={appsList} storeShareData={storeShareData} />
                             </>
                     }
