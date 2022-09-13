@@ -2,9 +2,13 @@
     text-align: center;
 }
 
+nav {
+    height: 50px;
+}
+
 .page {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 50px);
 
     display: flex;
     align-items: center;
@@ -13,10 +17,12 @@
 
 .share {
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     left: 10px;
-    height: 100vh;
+    height: calc(100vh - 50px);
 
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
 }

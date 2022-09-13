@@ -23,3 +23,34 @@ i.icon:hover{
 img.icon {
     width: 1.3em;
 }
+
+.edit {
+    font-size: 1em;
+}
+
+.table-container {
+    width: 80vw !important;
+    height: calc(100vh - 100px);
+    margin-bottom: 50px;
+    overflow-y: scroll;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.table {
+    font-size: 0.8em;
+}
+td {
+    padding: 2px !important;
+}
+.key {
+    width: 30%;
+}
+.value {width: 70%;}
+.value input  {
+    width: 100%;
+}
+.divider {
+    height: 20px;
+    background: rgb(220,220,220) !important;
+}
