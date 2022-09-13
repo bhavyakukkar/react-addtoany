@@ -1,3 +1,3 @@
 To Run:
-> npm run startServer
-> npm start
+- npm run startServer
+- npm start
